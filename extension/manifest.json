@@ -5,8 +5,16 @@
     "version": "1.0",
     
     "action":{
-        "default_icon": "compassIcon.png",
+        "default_icon": "images/pngimg.com-compass_PNG103386.png",
         "default_popup": "hello.html"
-    }
+    },
+
+    "content_scripts":[
+        {
+            "js": ["popup.js"],
+            "css": ["hello.html"],
+            "match":["<all_urls>"]
+        }
+    ]
 
 }
