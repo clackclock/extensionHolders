@@ -12,18 +12,20 @@ bb.backgroundPosition = "center";
 
 // document.body.style.fontFamily = "Jacquarda Bastarda 9, serif";
 //document.getElementsByTagNameNS("h1").style.fontFamily = "Jacquarda Bastarda 9, serif";
+let hed = document.querySelector("header");
+if(hed){
+    let badge = document.createElement("p");
+    badge.style.fontFamily = "Jacquarda Bastarda 9";
+    badge.textContent = "MAPS FOR THE MAP GOD";
 
-let t = document.querySelector("article");
-if(t){
-    let tex = t.textContent;
-    let wordMatch = /[^\s]+/g;
-    let words = text.matchAll(wordMatch);
-
-    let wS = words.style.fontFamily;
-    wS = "Jacquarda Bastarda 9, serif";
+    let firstH1 = article.querySelector("h1");
+    if(firstH1){
+        firstH1.append(badge);
+    }else{
+        let body = document.body;
+        body.prepend(badge);
+    }
 }
-
-
 
 if(article){
     let text = article.textContent;
@@ -46,5 +48,5 @@ if(article){
 
 $(document).ready(function(){
     $("body").css("background-color", "antiquewhite");
-    $("h1").css("fontFamily","Jacquarda Bastarda 9, serif" );
+    // $("h1").css("fontFamily","Jacquarda Bastarda 9, serif" );
 })
