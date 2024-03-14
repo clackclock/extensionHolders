@@ -1,5 +1,6 @@
 body{
     font-family: "Jacquarda Bastarda 9";
+    background-color: antiquewhite;
     background-image: url("images/Parchment-Paper-Texture-Old-Structure-Yellow-List-535983.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -10,6 +11,7 @@ body{
 }
 .jacquarda-bastarda {
     font-family: "Jacquarda Bastarda 9", serif;
+    /* src: url("https://fonts.googleapis.com/css2?family=Jacquarda+Bastarda+9&display=swap"); */
     font-weight: 400;
     font-style: normal;
 }
